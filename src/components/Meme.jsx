@@ -12,7 +12,7 @@ function Meme() {
 
   return (
     <main className="p-8">
-      <form className="grid grid-rows-2 grid-cols-2 gap-3">
+      <div className="grid grid-rows-2 grid-cols-2 gap-3">
         <input
           type="text"
           placeholder="input 1"
@@ -32,7 +32,7 @@ function Meme() {
         >
           Get a new meme image
         </button>
-      </form>
+      </div>
     </main>
   )
 }
