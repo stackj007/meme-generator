@@ -61,15 +61,32 @@ function Meme() {
         </button>
       </div>
 
-      <div className="relative rounded-lg mt-6">
+      {/* <div className="relative rounded-lg mt-6">
         <img
           className="max-w-md  border-md rounded-lg  p-6 mx-auto mt-6"
           src={image.randomImg}
         ></img>
-        <h2 className="text-2xl font-bold absolute top-1/4 left-1/2 text-center mt-4">
+        <h2 className="text-2xl font-bold absolute top-5 left-1/2 text-center mt-4">
           {image.topText}
         </h2>
-        <h2 className="text-2xl font-bold absolute bottom-1/4 left-1/2 text-center mt-4">
+        <h2 className="text-2xl font-bold absolute bottom-7 left-1/2 text-center mt-4">
+          {image.bottomText}
+        </h2>
+      </div> */}
+
+      <div className="relative rounded-lg mt-6">
+        <div className="flex justify-center items-center">
+          <img
+            src={image.randomImg}
+            className="meme--image"
+            alt="Meme"
+          />
+        </div>
+
+        <h2 className="absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 text-white text-2xl font-bold">
+          {image.topText}
+        </h2>
+        <h2 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl font-bold">
           {image.bottomText}
         </h2>
       </div>
