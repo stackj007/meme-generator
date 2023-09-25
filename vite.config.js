@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/meme-generator/',
+  base: './', // Set the base path to the root of your project
 })
